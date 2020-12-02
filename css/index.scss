@@ -2,7 +2,8 @@
 $w: 100%;
 //colors
 $c1: #4985FF;
-$c2: #000;
+$c2: #323232;
+$c3: #999;
 //fonts
 $M: 'Montserrat';
 
@@ -90,6 +91,34 @@ $M: 'Montserrat';
             box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
             border-radius: 30px;
             padding: 13px 36px 15px;
+        }
+    }
+}
+
+.main {
+    .service {
+        width: 1113px;
+
+        .title {
+            display: block;
+            width: 739px;
+            margin: 0 auto 50px;
+            text-align: center;
+            @include txt($c2, 53px, 36px, bold, $M);
+        }
+
+        .text {
+            display: block;
+            width: 730px;
+            margin: 0 auto 70px;
+            text-align: center;
+            @include txt($c3, 25px, 16px, normal, $M);
+        }
+
+        .block {
+            width: 353px;
+            height: 139px;
+            border: 1px solid black;
         }
     }
 }
