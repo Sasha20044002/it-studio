@@ -1,4 +1,95 @@
+//size
+$w: 100%;
+//colors
+$c1: #4985FF;
+$c2: #000;
+//fonts
+$M: 'Montserrat';
+
+//import fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+//mixin
+@mixin txt ($color, $line-height, $font-size, $font-weight, $font-family) {
+    color: $color;
+    line-height: $line-height;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    font-family: $font-family;
+}
+
+//Обнуление отступов
 * {
     padding: 0;
     margin: 0;
+}
+
+//сами стили
+.header {
+    background: url(../img/Rectangle.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 900px;
+
+    &-nav {
+
+        &-list {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            padding: 40px 0 0 0;
+
+            &-item {
+                padding: 0 0 40px 0;
+
+                &-link {
+                    @include txt(white, 20px, 16px, 500, $M);
+                    text-decoration: none;
+                }
+
+                &:not(:last-child) {
+                    margin: 0 40px 0 0;
+                }
+            }
+        }
+    }
+
+    .line {
+        opacity: 0.5;
+        border: 1px solid #A1A1A1;
+    }
+
+    &-content {
+        height: 88%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .text {
+            display: block;
+            @include txt(white, 20px, 16px, 500, $M);
+            margin: 0 0 20px 0;
+        }
+
+        .title {
+            display: block;
+            width: 829px;
+            @include txt(white, 64px, 48px, 800, $M);
+            text-align: center;
+            margin: 0 0 50px 0;
+        }
+
+        .btn {
+            display: block;
+            @include txt(white, 20px, 16px, 500, $M);
+            text-decoration: none;
+            background: $c1;
+            box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+            border-radius: 30px;
+            padding: 13px 36px 15px;
+        }
+    }
 }

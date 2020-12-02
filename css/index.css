@@ -1,5 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
 * {
   padding: 0;
   margin: 0;
+}
+
+.header {
+  background: url(../img/Rectangle.png) no-repeat center center fixed;
+  background-size: cover;
+  height: 900px;
+}
+
+.header-nav-list {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 40px 0 0 0;
+}
+
+.header-nav-list-item {
+  padding: 0 0 40px 0;
+}
+
+.header-nav-list-item-link {
+  color: white;
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  text-decoration: none;
+}
+
+.header-nav-list-item:not(:last-child) {
+  margin: 0 40px 0 0;
+}
+
+.header .line {
+  opacity: 0.5;
+  border: 1px solid #A1A1A1;
+}
+
+.header-content {
+  height: 88%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header-content .text {
+  display: block;
+  color: white;
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  margin: 0 0 20px 0;
+}
+
+.header-content .title {
+  display: block;
+  width: 829px;
+  color: white;
+  line-height: 64px;
+  font-size: 48px;
+  font-weight: 800;
+  font-family: "Montserrat";
+  text-align: center;
+  margin: 0 0 50px 0;
+}
+
+.header-content .btn {
+  display: block;
+  color: white;
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  text-decoration: none;
+  background: #4985FF;
+  -webkit-box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+          box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+  border-radius: 30px;
+  padding: 13px 36px 15px;
 }
 /*# sourceMappingURL=index.css.map */
